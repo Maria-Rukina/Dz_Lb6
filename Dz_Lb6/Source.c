@@ -19,7 +19,7 @@ void main()
 	m = A * B * C;
 	if (A < B && A < C) m = m / A;
 	else
-		if (B < A && B < C) m = m / C;
+		if (B < A && B < C) m = m / B;
 		else
 			if (C < A && C < B) m = m / C;
 	printf("Произведение двух наибольших из трёх ведёных чисел: %d", m);
