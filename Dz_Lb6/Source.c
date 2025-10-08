@@ -3,23 +3,58 @@
 #define _USE_MATH_DEFINES 
 #include <math.h>
 void task3();
+void taskDZ();
 
 void main()
 {
 	setlocale(LC_ALL, "Rus");
 
-	//task3()
+	//task3();
+	//taskDZ();
+	int A, B, C, m;
+	puts("–í–≤–µ–¥–∏—Ç–µ 3 —á–∏—Å–ª–∞:");
+	scanf("%d", &A);
+	scanf("%d", &B);
+	scanf("%d", &C);
+	m = A * B * C;
+	if (A < B && A < C) m = m / A;
+	else
+		if (B < A && B < C) m = m / C;
+		else
+			if (C < A && C < B) m = m / C;
+	printf("–ü—Ä–æ–∏–∑–≤–µ–¥–µ–Ω–∏–µ –¥–≤—É—Ö –Ω–∞–∏–±–æ–ª—å—à–∏—Ö –∏–∑ —Ç—Ä—ë—Ö –≤–µ–¥—ë–Ω—ã—Ö —á–∏—Å–µ–ª: %d", m);
 
+	getchar();
+}
+
+void task3()
+{
+	int A, B, C, m;
+	puts("–í–≤–µ–¥–∏—Ç–µ 3 —á–∏—Å–ª–∞:");
+	scanf("%d", &A);
+	scanf("%d", &B);
+	scanf("%d", &C);
+	m = A * B * C;
+	if (A < B && A < C) m = m / A;
+	else
+		if (B < A && B < C) m = m / C;
+		else
+			if (C < A && C < B) m = m / C;
+	printf("–ü—Ä–æ–∏–∑–≤–µ–¥–µ–Ω–∏–µ –¥–≤—É—Ö –Ω–∞–∏–±–æ–ª—å—à–∏—Ö –∏–∑ —Ç—Ä—ë—Ö –≤–µ–¥—ë–Ω—ã—Ö —á–∏—Å–µ–ª: %d", m);
+}
+
+void taskDZ()
+{
 	int x, y, r;
-	puts("¬‚Â‰ËÚÂ ÍÓÓ‰ËÌ‡Ú˚ x Ë y:");
+	puts("–í–≤–µ–¥–∏—Ç–µ –∫–æ–æ—Ä–¥–∏–Ω–∞—Ç—ã x –∏ y:");
 	scanf("%d", &x);
 	scanf("%d", &y);
 	if (x <= 5 && x >= -5 && y <= 5 && y >= -5) r = 1;
 	else
-	if (x > 0 && y < 0) r = 0;
-	else
-	if (x = -1 && (y <= 4 || y >= -4)) r = 1;
-	else r = 0;
+		if (x > 0 && y < 0) r = 0;
+		else
+			if (x = -1 && (y <= 4 || y >= -4)) r = 1;
+			else r = 0;
 	if (x = -2 && (y <= 3 || y >= -3)) r = 1;
 	else r = 0;
 	if (x = -3 && (y <= 2 || y >= -2)) r = 1;
@@ -36,34 +71,7 @@ void main()
 	if (x = 4 && y <= 3) r = 1;
 	else r = 0;
 	if (x = 5 && y = 0) r = 1;
-	printf(" ÓÓ‰ËÌ‡Ú˚ ÔËÌ‡‰ÎÂÊ‡Ú( ƒ‡ - 1, ÌÂÚ - 0): %d", r);
-	// x = 4, y = 3
-	// r = 1
-
-	getchar();
-}
-
-void task3()
-{
-	int A, B, C, m1, m2;
-	puts("¬‚Â‰ËÚÂ 3 ˜ËÒÎ‡:");
-	scanf("%d", &A);
-	scanf("%d", &B);
-	scanf("%d", &C);
-	if (A > B && A > C) m1 = A;
-	else
-		if (A < B && A > C) m2 = A;
-		else
-			if (A < C && A > B) m2 = A;
-	if (B > A && B > C) m1 = B;
-	else
-		if (B < A && B > C) m2 = B;
-		else
-			//if (B < C && B > A) m2 = B;
-	if (C > A && C > B) m1 = C;
-	else
-		if (C > A && C < B) m2 = C;
-		else
-			if (C > B && C < A) m2 = C;
-	printf("œÓËÁ‚Â‰ÂÌËÂ ‰‚Ûı Ì‡Ë·ÓÎ¸¯Ëı ËÁ Ú∏ı ‚‚Â‰∏Ì˚ı ˜ËÒÂÎ: %d", m1 * m2);
+	printf("–ö–æ–æ—Ä–¥–∏–Ω–∞—Ç—ã –ø—Ä–∏–Ω–∞–¥–ª–µ–∂–∞—Ç( –î–∞ - 1, –Ω–µ—Ç - 0): %d", r);
+	 x = 4, y = 3
+	 r = 1
 }
