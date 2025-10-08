@@ -12,31 +12,27 @@
 
 1.Начало
 
-2.Объявление переменных A, B, С, m1 и m2
+2.Объявление переменных A, B, С, m
 
 3.Ввести переменный A, B, и С
 
-4.Через if ввести условия при которых будут выбераться максимальные из трёх введёных чисел
+4.Найти m путём перемножения всех трёх чисел: m = A * B * C;
 
- * (A > B && A > C) m1 = A;
- * (A < B && A > C) m2 = A;
- * (A < C && A > B) m2 = A;
- * (B > A && B > C) m1 = B;
- * (B < A && B > C) m2 = B;
- * (B < C && B > A) m2 = B;
- * (C > A && C > B) m1 = C;
- * (C > A && C < B) m2 = C;
- * (C > B && C < A) m2 = C;
+5.Через if найти меньшее из трёх чисел и разделить на него m
 
-5.Ввывести результат через printf в конце посчитав произведение двух максимальных чисел (m1 * m2)
+ * (A < B && A < C) m = m / A;
+ * (B < A && B < C) m = m / B;
+ * (C < A && C < B) m = m / C;
 
-6.Конец
+6.Ввывести результат через printf в конце посчитав произведение двух максимальных чисел (m1 * m2)
+
+7.Конец
 
 Блок-схема
 
-<img width="4124" height="2444" alt="image" src="https://github.com/user-attachments/assets/fbf4e61d-1f4c-4848-b398-42619b5f3c4c" />
+<img width="1924" height="2684" alt="image" src="https://github.com/user-attachments/assets/25c23572-73d9-43d8-b49c-f758f3e1f155" />
+[ЗаданиеDZ.drawio](https://github.com/user-attachments/files/22761784/DZ.drawio)
 
-[Задание3.drawio](https://github.com/user-attachments/files/22751588/3.drawio)
 
 2.Реализация программы
 
